@@ -56,7 +56,7 @@ def oyun():
 
         while oyun_bitti:
             ekran.fill(SIYAH)
-            yazi = font.render("Oyun Bitti! 1 = Restart, 2 = Çık", True, KIRMIZI)
+            yazi = font.render("Oyun Bitti! 1 = Restart, Q = Çık", True, KIRMIZI)
             ekran.blit(yazi, (genislik / 6, yukseklik / 3))
             skor_goster(yilan_uzunluk - 1)
             pygame.display.update()
