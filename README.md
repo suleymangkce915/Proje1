@@ -1,4 +1,5 @@
 ## Süleyman Gökçe
+
 ![tanitimkarti](https://github.com/user-attachments/assets/6da00d2a-ae85-40fa-a1a6-1c77a5e20f1c)
 
 #Farklı uygulamaları bir arada sunmaya çalıştığımız uygulamızın ana ekeranı;
