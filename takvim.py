@@ -12,6 +12,9 @@ def show_calendar():
 
 root = tk.Tk()
 root.title("Takvim Uygulaması")
+ekrangenisligi=root.winfo_screenwidth()//2-160
+ekranyuksekligi=root.winfo_screenheight()//2-150
+root.geometry("320x300+{}+{}".format(ekrangenisligi, ekranyuksekligi))
 
 
 tk.Label(root, text="Yıl:").grid(row=0, column=0)
