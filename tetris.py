@@ -3,43 +3,42 @@ import random
 
 pygame.init()
 
-# Oyun ekranı ayarları
-genislik = 300  # 10 blok
-yukseklik = 600  # 20 blok
+genislik = 300 
+yukseklik = 600 
 blok_boyutu = 30
 
 ekran = pygame.display.set_mode((genislik, yukseklik))
 pygame.display.set_caption("Tetris")
 
-# Renkler
+
 RENKLER = [
-    (0, 255, 255),  # I
-    (0, 0, 255),    # J
-    (255, 165, 0),  # L
-    (255, 255, 0),  # O
-    (0, 255, 0),    # S
-    (128, 0, 128),  # T
-    (255, 0, 0)     # Z
+    (0, 255, 255),  
+    (0, 0, 255),   
+    (255, 165, 0), 
+    (255, 255, 0), 
+    (0, 255, 0),  
+    (128, 0, 128), 
+    (255, 0, 0)    
 ]
 
-# Taş şekilleri
+
 SEKILLER = [
-    [[1, 1, 1, 1]],  # I
+    [[1, 1, 1, 1]],  
     [[1, 0, 0],
-     [1, 1, 1]],     # J
+     [1, 1, 1]],    
     [[0, 0, 1],
-     [1, 1, 1]],     # L
+     [1, 1, 1]],    
     [[1, 1],
-     [1, 1]],        # O
+     [1, 1]],       
     [[0, 1, 1],
-     [1, 1, 0]],     # S
+     [1, 1, 0]],    
     [[0, 1, 0],
-     [1, 1, 1]],     # T
+     [1, 1, 1]],    
     [[1, 1, 0],
-     [0, 1, 1]]      # Z
+     [0, 1, 1]]     
 ]
 
-# Taş sınıfı
+
 class TetrisTasi:
     def __init__(self, x, y):
         self.x = x
@@ -50,7 +49,7 @@ class TetrisTasi:
     def döndür(self):
         self.sekil = [list(row) for row in zip(*self.sekil[::-1])]
 
-# Oyun tahtası
+
 def tablo_olustur():
     return [[(0, 0, 0) for _ in range(10)] for _ in range(20)]
 
@@ -68,13 +67,13 @@ def sekil_ciz(ekran, sekil):
                 pygame.draw.rect(ekran, sekil.renk,
                                  ((sekil.x + j) * blok_boyutu, (sekil.y + i) * blok_boyutu, blok_boyutu, blok_boyutu), 0)
 
-# Ana oyun fonksiyonu
+
 def oyun():
     saat = pygame.time.Clock()
     tablo = tablo_olustur()
     sekil = TetrisTasi(3, 0)
     düsme_zamani = 0
-    hiz = 500  # ms
+    hiz = 500  
 
     calisiyor = True
     while calisiyor:
@@ -98,7 +97,7 @@ def oyun():
             sekil.y += 1
             düsme_zamani = 0
 
-        # Çizim
+        
         cizim(ekran, tablo)
         sekil_ciz(ekran, sekil)
         pygame.display.update()
@@ -111,7 +110,7 @@ def oyun():
     sekil = TetrisTasi(3, 0)
     sonraki_sekil = TetrisTasi(3, 0)
     düsme_zamani = 0
-    hiz = 500  # ms
+    hiz = 500 
 
     def geçerli_hamle(sekil, tablo):
         for i, satir in enumerate(sekil.sekil):
@@ -181,7 +180,7 @@ def oyun():
                     calisiyor = False
             düsme_zamani = 0
 
-        # Çizim
+        
         cizim(ekran, tablo)
         sekil_ciz(ekran, sekil)
         pygame.display.update()

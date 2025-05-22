@@ -1,10 +1,10 @@
 #
-import datetime
+import datetime as ts
 import tkinter as tk
 import subprocess
 
-x = datetime.datetime.now()
-x_str = x.strftime("%d.%m.%Y")
+x = ts.datetime.now()
+x_str = x.strftime("%d.%m.%Y %H:%M:%S")
 
 
 def havadurumu():
