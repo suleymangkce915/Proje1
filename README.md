@@ -5,7 +5,7 @@
 Farklı uygulamaları bir arada sunmaya çalıştığımız uygulamızın ana ekeranı;
 
 
-![anaekran](https://github.com/user-attachments/assets/3bc4ada0-893d-4760-a0c0-9755c3bf2c96)
+![anaekran](https://github.com/user-attachments/assets/283b12af-18ad-4d4c-9b3b-e66859199a6a)
 
 
 Takvim butonumuz tuşlandığında ayrı pencere açılmaktadır. Pencerede yıl ve ay girişi yapıldığında seçili takvime ulaşılmaktadır.
