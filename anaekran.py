@@ -4,7 +4,7 @@ import tkinter as tk
 import subprocess
 
 x = ts.datetime.now()
-x_str = x.strftime("%d.%m.%Y %H:%M:%S")
+x_str = x.strftime("%H:%M \n %d.%m.%Y")
 
 
 def havadurumu():
@@ -26,8 +26,8 @@ ekranyuksekligi=pencere.winfo_screenheight()//2-275
 
 pencere.geometry("350x550+{}+{}".format(ekrangenisligi, ekranyuksekligi))
 
-button0 = tk.Label(pencere, text=x_str, font="Courier 8 bold", width=30, justify="center")
-button0.place(x=70, y=20)
+button0 = tk.Label(pencere, text=x_str, font="Courier 12 bold", width=30, justify="center")
+button0.place(x=30, y=20)
 
 button1 = tk.Button(pencere, text="Hava Durumu", font="Courier 16 bold", width=15, justify="center", command=havadurumu)
 button1.place(x=70, y=100)
