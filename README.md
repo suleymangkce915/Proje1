@@ -25,3 +25,17 @@ Oyun butonumuz oyunlarımıza ulaşmamızı sağlayan ekrana ulaşamızı sağla
 
 ![oyunlar](https://github.com/user-attachments/assets/044d72b8-3519-4a29-9532-ee6874cf40bf)
 
+
+Araba yarışı butonu pencerenin açılmasını ve oyuna ulaşmamızı sağlamaktadır. 
+
+![arabayarisi](https://github.com/user-attachments/assets/f75315d2-d9c6-4183-8976-2cf7670eed47)
+
+
+Tetris butonu pencerenin açılmasını ve oyuna ulaşmamızı sağlamaktadır. 
+
+![tetris](https://github.com/user-attachments/assets/9f4b5e25-ec3b-4094-a24b-cf1cd1743a21)
+
+
+Yılan oyunu butonu pencerenin açılmasını ve oyuna ulaşmamızı sağlamaktadır.
+
+![yilanoyunu](https://github.com/user-attachments/assets/c242849a-048c-4c1d-b96a-b951aa9a6b82)
