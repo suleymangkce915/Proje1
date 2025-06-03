@@ -8,13 +8,13 @@ x_str = x.strftime("%H:%M \n %d.%m.%Y")
 
 
 def takvim():
-    subprocess.run(["python", "takvim.py"])
+    subprocess.run(["python3", "takvim.py"])
 
 def hesapmakinasi():
-    subprocess.run(["python", "hesapmakinasi.py"])
+    subprocess.run(["python3", "hesapmakinasi.py"])
 
 def oyunlar():
-    subprocess.run(["python", "oyunlar.py"])
+    subprocess.run(["python3", "oyunlar.py"])
  
 pencere = tk.Tk()
 pencere.title('Ana Ekran')

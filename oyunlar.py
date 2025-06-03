@@ -2,13 +2,13 @@ import tkinter as tk
 import subprocess
 
 def arabayarisi():
-    subprocess.run(["python", "arabayarisi.py"])
+    subprocess.run(["python3", "arabayarisi.py"])
 
 def tetris():
-    subprocess.run(["python", "tetris.py"])
+    subprocess.run(["python3", "tetris.py"])
 
 def yilanoyunu():
-    subprocess.run(["python", "yilanoyunu.py"])
+    subprocess.run(["python3", "yilanoyunu.py"])
 
 
 pencere = tk.Tk()
