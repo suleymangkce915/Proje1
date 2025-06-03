@@ -27,7 +27,7 @@ araba_y = yukseklik - araba_yuk - 10
 
 dusman_gen = 50
 dusman_yuk = 80
-dusman_hiz = 5
+dusman_hiz = 4
 dusmanlar = []
 
 def dusman_uret():
@@ -56,7 +56,7 @@ while calisiyor:
         araba_x += 5
 
     
-    if random.randint(1, 20) == 1:
+    if random.randint(1, 45) == 1:
         dusman_uret()
 
     
